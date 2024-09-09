@@ -1,0 +1,248 @@
+/* Reset default margins and paddings, set box-sizing to border-box for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Nunito", sans-serif;
+}
+
+/* Ensure the body takes full height and use flexbox layout */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    /* background-color: #f4f4f4; */
+    background-image: url(img/thisisengineering-ZPeXrWxOjRQ-unsplash.jpg);
+    background-size: 1800PX;
+    background-position: 0px -400px;
+    background-repeat: no-repeat;
+    backdrop-filter: blur(2px);
+}
+
+/* Main content should expand to take available space */
+.content {
+    flex: 1;
+    background-color: #d3d3d381;
+}
+
+/* Header styles */
+header {
+    width: 100%;
+    padding: 20px 10px;
+    background-color: #f8f8f8;
+    border-bottom: 2px solid #d3d3d3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}   
+
+/* Logo styles */
+.logo h1 {
+    margin: 0;
+    font-size: 24px;
+    color: #2c3e50;
+    padding: 10px;
+    margin-left: 10px;
+}
+
+/* Navigation link styles */
+nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #000000;
+    font-size: 1.1rem;
+    padding: 10px;
+}
+
+/* Navigation link hover effect */
+nav a:hover {
+    color: black;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Login and sign-up button styles */
+.log-in button {
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 10px;
+}
+
+/* Login and sign-up button hover effect */
+/* .log-in button:hover {
+    background-color: white;
+} */
+
+/* Banner section styles */
+.banner {
+    width: 100%;
+    height: 60vh;
+    background-image: url('banner-image.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 50px 20px; /* Adjusted padding */
+    flex-direction: column;
+}
+
+/* Banner heading styles */
+.banner h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+/* Banner paragraph styles */
+.banner p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+/* Button styles in banner */
+.banner button {
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 10px;
+}
+
+
+/* Banner button hover effect */
+/* .banner button:hover {
+    background-color: white;
+} */
+
+.news-Section {
+    background-color: #f8f8f8;
+    width: 100%;
+    height: 60vh;
+    background-image: url('banner-image.jpg');
+    color: rgb(0, 0, 0);
+    /* padding: 50px 20px; */
+    flex-direction: column;
+}
+
+.left-Top-Header {
+    padding: 20px 20px;
+}
+
+.nowrap {
+    text-wrap: nowrap;
+}
+
+.hr-Links {
+    transition: all 0.3s;
+}
+
+.hr-Links:hover {
+    color: black;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.btn {
+    background-color: rgb(0, 230, 230);
+    border: rgb(0, 230, 230) 23px solid;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.log-in .sign-Up-Btn {
+    background-color: #f8f8f8;
+    border: rgb(0, 230, 230) 2px solid;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.log-in .sign-Up-Btn:hover {
+    background-color: rgb(0, 202, 202);
+    border: rgb(0, 202, 202) 2px solid;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.log-in .log-In-Btn {
+    border: rgb(0, 230, 230) 2px solid;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.log-in .log-In-Btn:hover {
+    border: rgb(0, 202, 202) 2px solid;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+
+.btn:hover {
+    background-color: rgb(0, 202, 202);
+}
+
+.btn-Size {
+    min-width: 86px;
+}
+
+.hr-Links{
+    border-radius: 10px;
+}
+
+/* Underline overflow effect */
+/* .underline-overflow {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 5px; 
+} */
+
+
+
+.underline-overflow:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px; /* Adjust the thickness of the underline */
+    /* background-color: hsl(10, 80%, 50%); */
+}
+
+
+/* Footer styles */
+footer {
+    width: 100%;
+    padding: 20px 10px;
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+}
+
+/* Footer paragraph styles */
+footer p {
+    margin: 5px 0;
+}
+
+/* Footer link styles */
+footer a {
+    color: aqua;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+/* Footer link hover effect */
+footer a:hover {
+    text-decoration: underline;
+}
+
+@keyframes sun-rise {
+    from {
+    /* pushes the sun down past the viewport */
+    transform: translateY(110vh);
+    }
+    to {
+    /* returns the sun to its default position */
+    transform: translateY(0);
+    }
+}
+
